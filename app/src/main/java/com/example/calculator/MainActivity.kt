@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         numberInput=true
     }
 
-    fun onDecimal(view: View) {
+    fun onDecimal() {
         if(numberInput && !invalidInput && !decimalInput)
         {
             txtInput.append(".")
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun onDelete(view: View) {
+    fun onDelete() {
         this.txtInput.text= ""
         numberInput=false
         invalidInput=false
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun onEqual(view: View) {
+    fun onEqual() {
         if(numberInput && !invalidInput)
         {
             val text = txtInput.text.toString()
